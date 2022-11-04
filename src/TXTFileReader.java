@@ -1,4 +1,7 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class TXTFileReader {
     static File file;
@@ -10,7 +13,6 @@ public class TXTFileReader {
         BufferedReader br = new BufferedReader(new FileReader(file));
         StringBuilder content = new StringBuilder("");
         String line;
-        int linesRead = 0;
         while ((line = br.readLine()) != null)
             content.append(line + " ");
         return content.toString();
