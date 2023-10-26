@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class TXTFileReader {
-    static File file;
+    private File file;
     public TXTFileReader(String filePath) {
         this.file = new File(filePath);
     }
